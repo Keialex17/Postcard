@@ -1,39 +1,56 @@
 body {
 	background: black;
-}
-* {
-	border: 1px dashed red;
-	min-height: 10px;
+	display: flex;
+	height: 100vh;
+	padding: 0%;
+	margin: 0%;
 }
 .postcard {
 	background-color: white;
 	width: 400px;
-	height: 300px;
-	margin: 0;
+	margin: auto;
+	padding: 15px;
 }
 .postcard-header {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .postcard-header img {
 	width: 50px;
 	height: 50px;
 }
 .postcard-header h1 {
-	width: 2000px;
-	height: 50px;
-	margin: 0;
+	margin: 0px;
 }
 .postcard-body {
 	display: flex;
 }
-.postcard-body izquierda{
-	float: left; width: 100%;
+.postcard-body .izquierda{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
 }
-.postcard-body derecha{
-	float: left; width: 100%;
-	
+.postcard-body .derecha{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.postcard-body .derecha input{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin: 5px 0px;
 }
 .postcard-footer {
-	display: flex;
-	flex-direction: column
+	text-align: center;
+	padding: 20px 0px;
+}
+.postcard-footer .boton{
+	color: black;
+	background-color: gainsboro;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 15px;
 }
