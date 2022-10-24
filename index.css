@@ -26,3 +26,14 @@ body {
 .postcard-body {
 	display: flex;
 }
+.postcard-body izquierda{
+	float: left; width: 100%;
+}
+.postcard-body derecha{
+	float: left; width: 100%;
+	
+}
+.postcard-footer {
+	display: flex;
+	flex-direction: column
+}
